@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="addToService.css">
+    <!-- <script type="text/javascript" src="services.js"></script> -->
+    <title>Checkout - Vox services</title>
+    <style>
+       h1,h2{
+        font-family: 'Poppins', sans-serif;
+       }
+       form {
+color: darkblue;
+background-color: lightblue; 
+width: 30%;
+border: 1px solid darkblue;
+margin-left:auto;
+margin-right:auto;
+padding :5px;
+font-family: 'Poppins', sans-serif;
+}
+
+.button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+        #logo{
+            height: 70px;
+            width:80px;
+            margin-right: auto;
+          }
+    </style>
+</head>
+
+<body>
+    
+    <nav id="navbar" class="nav">
+        <img id="logo" src="logo1.png">
+        <ul class="nav-list">
+            <li>
+                <a href="loginHome.html">Home</a>
+            </li>
+            <li>
+                <a href="addToServices.html">Add to cart</a>
+            </li>
+            <li>
+                <a href="loginService.html">Services</a>
+            </li>
+            <li ><a href="home.html">Log out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Checkout</h1>
+
+    <h2>Total Price: <span id="total-price">AED0.00</span></h2>
+
+    
+    <div id="card" >
+        
+        <form method="get" action="loginHome.html" >
+            <h2 style="font-size: medium; font-family: Arial, Helvetica, sans-serif;">Enter Card details</h2>
+            Credit Card Number:
+    <input type="text" name="creditCardNum" size="20" placeholder="XXXX-XXXX-XXXX-XXXX" title="XXXX-XXXX-XXXX-XXXX" pattern="\d{4}-\d{4}-\d{4}-\d{4}" required>
+    <br>
+    Expiry Date:
+    <input type="text" name="month" size="5" placeholder="MM" title="MM" pattern="^0[1-9]|1[0-2]$" required> /
+    <input type="text" name="year" size="10" placeholder="YYYY" title="YYYY" pattern="^\d{4}$" required><br>
+    CVV Number:
+    <input type="text" name="cvv" size="3" placeholder="CVV" title="NNN" pattern="^\d{3}$" required><br>
+    <button class="button"  onclick="alert('YOU HAVE SUCCESFULLY PAID FOR A SERVICE!!\n VOX BARBERS ARE MORE THAN READY TO GIVE YOU THAT SPECIAL NEW LOOK.\n WE EXPECT TO SEE YOU SOON.')" onsubmit="alert('YOU HAVE SUCCESFULLY PAID FOR A SERVICE!!\n VOX BARBERS ARE MORE THAN READY TO GIVE YOU THAT SPECIAL NEW LOOK.\n WE EXPECT TO SEE YOU SOON.')">Validate payment</button>
+        </form>
+    </div>
+
+    <script>
+        // Retrieve the total price from the previous HTML page
+        var totalPrice = parseFloat(localStorage.getItem("totalPrice"));
+
+// Display the total price on the checkout page
+if (!isNaN(totalPrice)) {
+    document.getElementById("total-price").innerHTML = "Total: AED" + totalPrice.toFixed(2);
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+#logo{
+  height: 70px;
+  width:80px;
+  margin-right: auto;
+}
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+ 
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Base styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+.body1{
+background-image: url('AdobeStock_208719507_Preview.jpeg');
+}
+
+body {
+  background: url('old-fashioned-professional-tattooed-hairdresser-does-haircut-african-american-client-using-scissors-comb-isolated-dark-textured-background.jpg') ;  /* fallback for old browsers */
+  background-size:cover;
+  backdrop-filter: blur(25px);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+@import url(https://font.googleapis.com/css?family=Playfair+Display);
+@import url(https://font.googleapis.com/css?family=Fauna+One);
+
+button{
+  font-family: 'Poppins', sans-serif;
+	position :relative;
+	margin: 100px 200px;
+	min-width: 500px;
+	max-width: 600px;
+	min-height: 150px;
+	color: var(--main-white);
+	text-align: center ;
+	line-height: 1.4em;
+	background-color: var(--main-red);
+	font-size: 25px;
+  font-weight: 600;
+  border: 0;
+	border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+button:hover{
+  background-color: maroon;
+}
+
+.ffig{
+	font-family: 'Poppins', sans-serif;
+	position :relative;
+	margin: 100px 200px;
+	min-width: 500px;
+	max-width: 600px;
+	min-height: 320px;
+	width: 100%;
+	color: var(--main-red);
+	text-align: left ;
+	line-height: 1.4em;
+	background-color: #f2eee3;
+	font-size: 16px;
+	border-radius: 	25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
+.ffig img{
+	position: absolute;
+	right:0%;
+	top: 50%;
+	opacity:1;
+	width: 100%;
+	-webkit-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+	border-radius: 	25px;
+  
+}
+
+.ffig figcaption{
+	position: absolute;
+	width: 50%;
+	top: 50%;
+    left:0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 20px 0 20px 20px;
+
+}
+
+.ffig h2,p {
+
+	margin : 0;
+	width : 100%;
+	-webkit-transform: translateX(20px);
+	transform: translateX(20px);
+	opacity: 0;
+}
+.ffig h2{
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+  text-align: left;
+}
+
+.ffig p{
+	font-size: 0.8em;
+}
+
+.ffig a{
+	position : absolute;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.ffig:hover img,
+.snip1482.hover img {
+	width:55%;
+	right: -10%;
+
+}
+
+.ffig:hover figcaption h2,
+.ffig.hover figcaption h2,
+.ffig:hover figcaption p,
+.ffig.hover figcaption p{
+	-webkit-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-red);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background: var(--main-blue);
+}
+
+

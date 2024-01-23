@@ -1,0 +1,178 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+  
+  /* Base reset */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* box-sizing and font sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins',sans-serif;
+  }
+  
+  @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  /* Base styles */
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+  }
+  
+  h1,h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 6rem;
+  }
+  
+
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  .body1{
+  background-image: url('AdobeStock_208719507_Preview.jpeg');
+  }
+  #logo{
+    height: 70px;
+    width:80px;
+    margin-right: auto;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+  }
+
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 1000px;
+    background-image: url('portrait-tattooed-male-barber-holds-sharp-scissors-blade.jpg');
+    background-size:cover;
+  
+  /*border-radius: 30px;*/
+  transition: transform .2s;
+  
+  
+  background-position-x: center;
+  }
+
+  .welcome-section > p {
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--main-red);
+    position: absolute;
+  }
+
+.About{
+    backdrop-filter: blur(15px);
+    background-color: var(--main-red);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+  
+  #barb {
+      text-align: center;
+      backdrop-filter: blur(15px);
+  }
+  #shopname{
+      text-align: left;
+      height: 14px;
+      width: 10px;
+      font-family: cursive;
+      color: blue;
+  }
+  #headr{
+      display: flex;
+  }
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+  @media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+  
+  .nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  
+  .nav-list a:hover {
+    background: var(--main-blue);
+  }
+  

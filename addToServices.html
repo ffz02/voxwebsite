@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="addToService.css">
+        <script type="text/javascript" src="services.js"></script>
+        <title>Vox services </title>
+    </head>
+    <body>
+        <nav id=navbar class=nav>
+            <img id="logo" src="logo1.png">
+            <ul class="nav-list">
+          <li>
+              <a href="loginHome.html">Home </a>
+          </li>
+          
+              
+              <li ><a href="loginService.html">Services</a>
+                </li>
+                <li ><a href="home.html">Log out</a>
+                </li>
+              </ul>
+          </nav>
+    <div class="container">
+        <h1>Register for a service</h1>
+
+        <h2>Services:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="services-container"></tbody>
+        </table>
+    
+        <h2>Cart:</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="cart-container"></tbody>
+        </table>
+    <div id="total-button" style="display: flex; position: relative;text-align: center;">
+        <h2 id="total-price">Total: AED0.00</h2>
+        <button class="button"  onclick="window.location.href='checkout.html';">Checkout</button>
+    </div>
+</div>
+    
+    </body>
+</html>

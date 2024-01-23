@@ -1,0 +1,48 @@
+<html>
+    <link rel="stylesheet" href="Registration1.css">
+    <script src="script.js"></script>
+    <head></head>
+    <title>Registration</title>
+        <body>
+            <nav id=navbar class=nav>
+                <img id="logo" src="logo1.png">
+        <ul class="nav-list">
+        <li>
+        <a href="home.html">Home </a>
+        </li>
+        
+        
+        <li ><a href="services.html">Services</a>
+        
+        
+        </ul>
+        </nav>
+     
+            <h1>Register</h1>
+            <form method="GET" action="Login.html">
+                <div class="container">
+                    <h2>Customer  Information</h2>
+                    First Name <br>
+                    <input type="text" pattern="^[A-Z][a-z]+$"  id="first" class="inputfield" placeholder="First Name"required> <br>
+                    Family Name <br>
+                    <input type="text" pattern="^[A-Z][a-z]+$" name="Family" class="inputfield" id="family" placeholder="Family Name" required> <br>
+                    
+                    Mobile Number <br>
+                    <input type="text" value = "+971" class="inputfield" disabled size="3">
+                    <input type="text" name="Num" class="inputfield" id="number" pattern="[0-9]{10}" placeholder="05XXXXXXXX" required> <br>
+                    Gender <br>
+                    <input type="radio" name="Gender" value="Male" id="gender" required>Male
+                    <input type="radio" name="Gender" value="Family" id = "gender" required>Female <br>
+                    Email <br>
+                    <input type="email" name="email" class="inputfield" id="" placeholder="johndoe@gmail.com" required> <br>
+                    Password <br>
+                    <input type="password" class="inputfield" id="password1"> <br>
+                    <input type="checkbox" name="t&c" id="" required> I agree to the 
+                    <a href="TermsAndConditions.html" target="_blank">Terms & Conditions</a> and <a href="PrivacyPolicy.html" target="_blank">Privacy Policy</a> <br>
+                    <a href="TermsAndConditions.html"><button class="button" >Register</button> </a> <br>
+                    <p>Already have an account? <a href="Login.html">Login here</a> </p>
+                </div>
+                
+            </form>
+        </body>
+</html>

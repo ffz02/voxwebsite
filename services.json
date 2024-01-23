@@ -1,0 +1,28 @@
+{"servicesList":
+[{
+	"sname": "Cuts and fade",
+	"price": 50
+},
+
+{
+	"sname": "Beards",
+	"price": 30
+},
+
+{
+	"sname": "Braiding",
+	"price": 150
+},
+
+{
+	"sname": "Facials",
+	"price": 30
+},
+
+{
+	"sname": "Hair coloring",
+	"price": 60
+}
+
+]
+}
